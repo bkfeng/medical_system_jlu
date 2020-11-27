@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Include/medical.h
+
+C:/Users/CGMS/C/medical_system_jlu/main.c
+stdio.h
+-
+medical.h
+C:/Users/CGMS/C/medical_system_jlu/medical.h
+

@@ -24,7 +24,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/CGMS/C/medical_system_jlu/./Include"/>
+					<Add directory="C:/Users/CGMS/C/medical_system_jlu/./include"/>
 					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
 					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
@@ -47,7 +47,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/CGMS/C/medical_system_jlu/./Include"/>
+					<Add directory="C:/Users/CGMS/C/medical_system_jlu/./include"/>
 					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
 					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/main.c">
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/main.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/outpatient_system.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/time.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/CMakeLists.txt">

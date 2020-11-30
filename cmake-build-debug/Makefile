@@ -142,32 +142,86 @@ medical_system_jlu/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/build
 .PHONY : medical_system_jlu/fast
 
-main.obj: main.c.obj
+src/main.obj: src/main.c.obj
 
-.PHONY : main.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/main.c.obj
-.PHONY : main.c.obj
+src/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/main.c.obj
+.PHONY : src/main.c.obj
 
-main.i: main.c.i
+src/main.i: src/main.c.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/main.c.i
-.PHONY : main.c.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-main.s: main.c.s
+src/main.s: src/main.c.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/main.c.s
-.PHONY : main.c.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/outpatient_system.obj: src/outpatient_system.c.obj
+
+.PHONY : src/outpatient_system.obj
+
+# target to build an object file
+src/outpatient_system.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj
+.PHONY : src/outpatient_system.c.obj
+
+src/outpatient_system.i: src/outpatient_system.c.i
+
+.PHONY : src/outpatient_system.i
+
+# target to preprocess a source file
+src/outpatient_system.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.i
+.PHONY : src/outpatient_system.c.i
+
+src/outpatient_system.s: src/outpatient_system.c.s
+
+.PHONY : src/outpatient_system.s
+
+# target to generate assembly for a file
+src/outpatient_system.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.s
+.PHONY : src/outpatient_system.c.s
+
+src/time.obj: src/time.c.obj
+
+.PHONY : src/time.obj
+
+# target to build an object file
+src/time.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/time.c.obj
+.PHONY : src/time.c.obj
+
+src/time.i: src/time.c.i
+
+.PHONY : src/time.i
+
+# target to preprocess a source file
+src/time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/time.c.i
+.PHONY : src/time.c.i
+
+src/time.s: src/time.c.s
+
+.PHONY : src/time.s
+
+# target to generate assembly for a file
+src/time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/time.c.s
+.PHONY : src/time.c.s
 
 # Help Target
 help:
@@ -178,9 +232,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... medical_system_jlu
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/outpatient_system.obj
+	@echo ... src/outpatient_system.i
+	@echo ... src/outpatient_system.s
+	@echo ... src/time.obj
+	@echo ... src/time.i
+	@echo ... src/time.s
 .PHONY : help
 
 

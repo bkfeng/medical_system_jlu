@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/CGMS/C/medical_system_jlu/main.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/main.c.obj"
+  "C:/Users/CGMS/C/medical_system_jlu/src/main.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/main.c.obj"
+  "C:/Users/CGMS/C/medical_system_jlu/src/outpatient_system.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj"
+  "C:/Users/CGMS/C/medical_system_jlu/src/time.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/time.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  ".././Include"
+  ".././include"
   )
 
 # Targets to which this target links.

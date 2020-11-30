@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/medical_system_jlu.dir/main.c.obj"
+  "CMakeFiles/medical_system_jlu.dir/src/main.c.obj"
+  "CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj"
+  "CMakeFiles/medical_system_jlu.dir/src/time.c.obj"
   "libmedical_system_jlu.dll.a"
   "medical_system_jlu.exe"
   "medical_system_jlu.exe.manifest"

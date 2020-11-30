@@ -76,33 +76,65 @@ include CMakeFiles/medical_system_jlu.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/medical_system_jlu.dir/flags.make
 
-CMakeFiles/medical_system_jlu.dir/main.c.obj: CMakeFiles/medical_system_jlu.dir/flags.make
-CMakeFiles/medical_system_jlu.dir/main.c.obj: CMakeFiles/medical_system_jlu.dir/includes_C.rsp
-CMakeFiles/medical_system_jlu.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\CGMS\C\medical_system_jlu\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/medical_system_jlu.dir/main.c.obj"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\medical_system_jlu.dir\main.c.obj   -c C:\Users\CGMS\C\medical_system_jlu\main.c
+CMakeFiles/medical_system_jlu.dir/src/main.c.obj: CMakeFiles/medical_system_jlu.dir/flags.make
+CMakeFiles/medical_system_jlu.dir/src/main.c.obj: CMakeFiles/medical_system_jlu.dir/includes_C.rsp
+CMakeFiles/medical_system_jlu.dir/src/main.c.obj: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\CGMS\C\medical_system_jlu\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/medical_system_jlu.dir/src/main.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\medical_system_jlu.dir\src\main.c.obj   -c C:\Users\CGMS\C\medical_system_jlu\src\main.c
 
-CMakeFiles/medical_system_jlu.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/medical_system_jlu.dir/main.c.i"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\CGMS\C\medical_system_jlu\main.c > CMakeFiles\medical_system_jlu.dir\main.c.i
+CMakeFiles/medical_system_jlu.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/medical_system_jlu.dir/src/main.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\CGMS\C\medical_system_jlu\src\main.c > CMakeFiles\medical_system_jlu.dir\src\main.c.i
 
-CMakeFiles/medical_system_jlu.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/medical_system_jlu.dir/main.c.s"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\CGMS\C\medical_system_jlu\main.c -o CMakeFiles\medical_system_jlu.dir\main.c.s
+CMakeFiles/medical_system_jlu.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/medical_system_jlu.dir/src/main.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\CGMS\C\medical_system_jlu\src\main.c -o CMakeFiles\medical_system_jlu.dir\src\main.c.s
+
+CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: CMakeFiles/medical_system_jlu.dir/flags.make
+CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: CMakeFiles/medical_system_jlu.dir/includes_C.rsp
+CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: ../src/outpatient_system.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\CGMS\C\medical_system_jlu\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\medical_system_jlu.dir\src\outpatient_system.c.obj   -c C:\Users\CGMS\C\medical_system_jlu\src\outpatient_system.c
+
+CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\CGMS\C\medical_system_jlu\src\outpatient_system.c > CMakeFiles\medical_system_jlu.dir\src\outpatient_system.c.i
+
+CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\CGMS\C\medical_system_jlu\src\outpatient_system.c -o CMakeFiles\medical_system_jlu.dir\src\outpatient_system.c.s
+
+CMakeFiles/medical_system_jlu.dir/src/time.c.obj: CMakeFiles/medical_system_jlu.dir/flags.make
+CMakeFiles/medical_system_jlu.dir/src/time.c.obj: CMakeFiles/medical_system_jlu.dir/includes_C.rsp
+CMakeFiles/medical_system_jlu.dir/src/time.c.obj: ../src/time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\CGMS\C\medical_system_jlu\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/medical_system_jlu.dir/src/time.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\medical_system_jlu.dir\src\time.c.obj   -c C:\Users\CGMS\C\medical_system_jlu\src\time.c
+
+CMakeFiles/medical_system_jlu.dir/src/time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/medical_system_jlu.dir/src/time.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\CGMS\C\medical_system_jlu\src\time.c > CMakeFiles\medical_system_jlu.dir\src\time.c.i
+
+CMakeFiles/medical_system_jlu.dir/src/time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/medical_system_jlu.dir/src/time.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\CGMS\C\medical_system_jlu\src\time.c -o CMakeFiles\medical_system_jlu.dir\src\time.c.s
 
 # Object files for target medical_system_jlu
 medical_system_jlu_OBJECTS = \
-"CMakeFiles/medical_system_jlu.dir/main.c.obj"
+"CMakeFiles/medical_system_jlu.dir/src/main.c.obj" \
+"CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj" \
+"CMakeFiles/medical_system_jlu.dir/src/time.c.obj"
 
 # External object files for target medical_system_jlu
 medical_system_jlu_EXTERNAL_OBJECTS =
 
-medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/main.c.obj
+medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/src/main.c.obj
+medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj
+medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/src/time.c.obj
 medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/build.make
 medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/linklibs.rsp
 medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/objects1.rsp
 medical_system_jlu.exe: CMakeFiles/medical_system_jlu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\CGMS\C\medical_system_jlu\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable medical_system_jlu.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\CGMS\C\medical_system_jlu\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable medical_system_jlu.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\medical_system_jlu.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

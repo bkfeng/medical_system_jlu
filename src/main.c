@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "medical.h"
+#include "ms.h"
 
 int main() {
     test test1;

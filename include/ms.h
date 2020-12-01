@@ -1,8 +1,24 @@
-//全局变量
-int PatientInfoListLength = 0;//病人信息表长
-int DoctorInfoListLength = 0;//医生信息表长
-int OutPatientListLength = 0;//门诊记录表长
 
+#ifndef MEDICAL_SYSTEM_JLU_MS_H
+#define MEDICAL_SYSTEM_JLU_MS_H
+
+/*----------全局变量-----------*/
+
+int PatientInfoListLength;//病人信息表长
+int DoctorInfoListLength;//医生信息表长
+int OutPatientListLength;//门诊记录表长
+
+
+
+/*-----------函数-------------*/
+
+int getTime();//获取当前时间
+void outpatientSystem();//门诊系统
+void inhosSystem();//住院系统
+
+
+
+/*-----------结构体-----------*/
 typedef struct PatientInfo {
     char Name[10];
     int Age;
@@ -21,7 +37,7 @@ typedef struct DoctorInfo {
 } DoctorInfo; //医生信息
 
 //检查信息
-typedef struct CheckProgagm {
+typedef struct CheckProgram {
     char Name[10];
     double Cost; //药品单价
     int ID;
@@ -72,3 +88,11 @@ typedef struct TreatRecord {
     TreatInfo treatinfo;
     struct TreatRecord *next;
 } TreatRecord;
+
+
+
+
+
+#endif //MEDICAL_SYSTEM_JLU_MS_H
+
+

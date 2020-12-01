@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../Include/medical.h
+../include/ms.h
 
-C:/Users/CGMS/C/medical_system_jlu/main.c
+C:/Users/CGMS/C/medical_system_jlu/src/main.c
 stdio.h
 -
-medical.h
-C:/Users/CGMS/C/medical_system_jlu/medical.h
+ms.h
+-
+stdlib.h
+-
 

@@ -1,6 +1,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <ms.h>
+/*
 extern PatientInfo list[];
 
 void AddOSRecording(){
@@ -17,6 +18,8 @@ void AddOSRecording(){
     int DID;
     printf("请输入挂号医生编号：\n");
     scanf("%d",&DID);
-    list[PatientInfoListLength].ID =
+//    list[PatientInfoListLength].ID =
 
 }
+
+ */

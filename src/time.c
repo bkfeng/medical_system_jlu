@@ -13,6 +13,7 @@ int getTime() {
 //    printf("%d\n", 1 + p->tm_mon);/*获取当前月份,范围是0-11,所以要加1*/
 //    printf("%d\n", 1900 + p->tm_year);/*获取当前年份,从1900开始，所以要加1900*/
 //    printf("%d\n", p->tm_yday); /*从今年1月1日算起至今的天数，范围为0-365*/
-    return (((1 + p->tm_mon) * 100 + p->tm_mday) * 100 + 8 + p->tm_hour) * 100 + p->tm_min;//月 日 时 分
+    return (((1 + p->tm_mon) * 100 + p->tm_mday) * 100 + 8 + p->tm_hour)
+    * 100 + p->tm_min;//月 日 时 分
 
 }

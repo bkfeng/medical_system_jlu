@@ -142,6 +142,33 @@ medical_system_jlu/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/build
 .PHONY : medical_system_jlu/fast
 
+src/get_num.obj: src/get_num.c.obj
+
+.PHONY : src/get_num.obj
+
+# target to build an object file
+src/get_num.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/get_num.c.obj
+.PHONY : src/get_num.c.obj
+
+src/get_num.i: src/get_num.c.i
+
+.PHONY : src/get_num.i
+
+# target to preprocess a source file
+src/get_num.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/get_num.c.i
+.PHONY : src/get_num.c.i
+
+src/get_num.s: src/get_num.c.s
+
+.PHONY : src/get_num.s
+
+# target to generate assembly for a file
+src/get_num.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/get_num.c.s
+.PHONY : src/get_num.c.s
+
 src/main.obj: src/main.c.obj
 
 .PHONY : src/main.obj
@@ -232,6 +259,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... medical_system_jlu
+	@echo ... src/get_num.obj
+	@echo ... src/get_num.i
+	@echo ... src/get_num.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

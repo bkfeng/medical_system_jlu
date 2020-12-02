@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/include/ms.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ms.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/outpatient_system.c" charset="GBK" />
   </component>
 </project>

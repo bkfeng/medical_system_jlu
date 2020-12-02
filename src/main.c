@@ -17,11 +17,13 @@ int main() {
         system("cls");
         puts("*********欢迎进入吉林大学医疗系统**********");
         sprintf(time_now,"%d",getTime());//获取时间并转换为字符串
+        puts("");
         printf("*********当前系统时间：%s**********\n",time_now);
+        puts("");
         puts("**********请选择需要进入的系统：***********");
-        puts("**********1---门诊系统*******************");
-        puts("**********2---住院系统*******************");
-        puts("**********#---退出系统*******************");
+        puts("          1---门诊系统                   ");
+        puts("          2---住院系统                   ");
+        puts("          #---退出系统                   ");
 
         while (1){
             sc_input = getchar();
@@ -31,7 +33,7 @@ int main() {
             switch (sc_input) {
 
                 case '1':
-//                    outpatientSystem();//进入门诊系统
+                    outpatientSystem();//进入门诊系统
                     break;
                 case '2':
 //                    inhosSystem();//进入医疗系统

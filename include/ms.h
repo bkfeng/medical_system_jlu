@@ -4,17 +4,18 @@
 
 /*----------全局变量-----------*/
 
-int PatientInfoListLength;//病人信息表长
-int DoctorInfoListLength;//医生信息表长
-int OutPatientListLength;//门诊记录表长
+//int PatientInfoListLength;//病人信息表长
+//int DoctorInfoListLength;//医生信息表长
+//int OutPatientListLength;//门诊记录表长
 
 
 
 /*-----------函数-------------*/
 
 int getTime();//获取当前时间
-void outpatientSystem();//门诊系统
-void inhosSystem();//住院系统
+int outpatientSystem();//门诊系统
+int inhosSystem();//住院系统
+unsigned __int64 getNum();//获取数字
 
 
 
@@ -23,7 +24,7 @@ typedef struct PatientInfo {
     char Name[10];
     int Age;
     long long ID;//挂号；月 日 时 分 科室ID 医生ID 编号
-    int CardID;//身份证信息
+    unsigned __int64 CardID;//身份证信息
 } PatientInfo; //患者信息
 
 //医生信息

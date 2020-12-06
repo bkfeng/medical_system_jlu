@@ -93,6 +93,18 @@
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/outpatient_system.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/read_checkup.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/read_doc.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/read_medicine.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/register_system.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/time.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>

@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <ms.h>
+#include "ms.h"
 #include <stdlib.h>
 
 int main() {
 
     int quit_flag = 0;//系统退出标记
-
     char time_now[8];//时间字符串
-
     char c_input[100];//字符串输入
     char sc_input;//单个字符输入
     int i_input;
@@ -25,8 +23,14 @@ int main() {
         puts("          2---住院系统                   ");
         puts("          #---退出系统                   ");
 
+        DoctorInfo *d_list = readDoctorInfo();//获取医生信息；
+        Medicine *m_list = readMedicine();//获取医生信息
+        CheckUp *c_list = readCheckUp();
+
+
         while (1){
             sc_input = getchar();
+            while (getchar() != '\n');//跳过输入行剩余部分
             if (sc_input == '\n'){
                 continue;
             }

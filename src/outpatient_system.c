@@ -5,50 +5,9 @@
 
 #include <ctype.h>
 #include <stdio.h>
-#include <ms.h>
+#include "ms.h"
 #include <stdlib.h>
 #include <string.h>
-
-/************************
- *
- * 增加一条挂号记录
- *
- */
-int addOSRecording(PatientInfo *p){
-
-    PatientInfo tempP;
-    char c_temp[20]="12345";
-    puts(c_temp);
-    puts("请输入病人姓名：");
-    gets(c_temp);
-    puts(c_temp);
-    printf("请输入病人身份证号：\n");
-    strcpy(tempP.Name,c_temp);
-    puts("请输入病人年龄：");
-    tempP.Age = (int)getNum();
-    if (tempP.Age == 0){
-        return 0;
-    }
-    printf("请输入病人身份证号：\n");
-    tempP.CardID = getNum();
-    if (tempP.CardID == 0){
-        return 0;
-    }
-    printf("请输入挂号科室编号：\n");
-    int RID = (int)getNum();
-    if (RID == 0){
-        return 0;
-    }
-    printf("请输入挂号医生编号：\n");
-    int DID = (int)getNum();
-    if (DID == 0){
-        return 0;
-    }
-    tempP.ID = (getTime() * 100 + RID) *100 + DID;
-    memcpy(p,&tempP,sizeof(tempP));//临时结构体赋给p指向的数组
-    return 1;
-
-}
 
 int outpatientSystem(){
 
@@ -77,14 +36,17 @@ int outpatientSystem(){
         while (1){
 
             sc_input = getchar();
+            while (getchar() != '\n');//跳过输入行剩余部分
             if (sc_input == '\n'){
                 continue;
             }
             switch (sc_input) {
 
                 case '1':
-                    if (addOSRecording(p)){//增加挂号记录
+                    if (addRedRecording(p)){//增加挂号记录
                         p_list_length++;
+                        puts("***********挂号成功********");
+                        system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");
                     }
@@ -94,17 +56,16 @@ int outpatientSystem(){
                     break;
                 case '3':
 
-                case '#':
+                case '4':
                     os_quit_flag = 1;//退出系统
                     break;
                 default:
                     puts("*********输入错误，请重新输入**********");
             }
-            if (sc_input == '1' || sc_input == '2' || sc_input == '#'){
+
+            if (sc_input == '1' || sc_input == '2' || sc_input == '3'){
                 break;
             }
-            while (getchar() != '\n')//跳过输入行剩余部分
-                continue;
         }
 
     }

@@ -8,11 +8,17 @@
 
 ../include/ms.h
 
+C:/Users/CGMS/C/medical_system_jlu/src/get_num.c
+stdio.h
+-
+ms.h
+C:/Users/CGMS/C/medical_system_jlu/src/ms.h
+
 C:/Users/CGMS/C/medical_system_jlu/src/main.c
 stdio.h
 -
 ms.h
--
+C:/Users/CGMS/C/medical_system_jlu/src/ms.h
 stdlib.h
 -
 
@@ -22,9 +28,25 @@ ctype.h
 stdio.h
 -
 ms.h
--
+C:/Users/CGMS/C/medical_system_jlu/src/ms.h
 stdlib.h
 -
+string.h
+-
+
+C:/Users/CGMS/C/medical_system_jlu/src/read_doc.c
+ms.h
+C:/Users/CGMS/C/medical_system_jlu/src/ms.h
+
+C:/Users/CGMS/C/medical_system_jlu/src/read_medicine.c
+ms.h
+C:/Users/CGMS/C/medical_system_jlu/src/ms.h
+
+C:/Users/CGMS/C/medical_system_jlu/src/register_system.c
+stdio.h
+-
+ms.h
+C:/Users/CGMS/C/medical_system_jlu/src/ms.h
 string.h
 -
 

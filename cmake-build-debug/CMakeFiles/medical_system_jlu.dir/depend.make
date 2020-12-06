@@ -10,5 +10,14 @@ CMakeFiles/medical_system_jlu.dir/src/main.c.obj: ../src/main.c
 CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: ../include/ms.h
 CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: ../src/outpatient_system.c
 
+CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj: ../src/read_doc.c
+
+CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj: ../src/read_medicine.c
+
+CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj: ../src/register_system.c
+
 CMakeFiles/medical_system_jlu.dir/src/time.c.obj: ../src/time.c
 

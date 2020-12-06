@@ -1,24 +1,28 @@
 /*************
  *
- * è·å–é”®ç›˜è¾“å…¥å¹¶è½¬ä¸ºæ•°å­—
+ * »ñÈ¡¼üÅÌÊäÈë²¢×ªÎªÊı×Ö
  *
- * æ³¨æ„ï¼šå‡½æ•°åªæ£€éªŒæ˜¯å¦ä¸ºæ•°å­—ï¼Œä¸æ£€éªŒé•¿åº¦
+ * ×¢Òâ£ºº¯ÊıÖ»¼ìÑéÊÇ·ñÎªÊı×Ö£¬²»¼ìÑé³¤¶È
  */
 
 #include <stdio.h>
-#include <ms.h>
-unsigned __int64 getNum(){
+#include "ms.h"
+
+int getNum(){
     char temp[20];
     gets(temp);
-    unsigned __int64 res = 0;
-    //é€ä¸ªå­—ç¬¦è½¬æ¢ï¼Œå¹¶ç´¯åŠ åˆ°ç»“æœres
-    for (int i = 0; i < 20; ++i) {
+    printf("%d",temp[0] - 48);
+    int res = 0;
+    //Öğ¸ö×Ö·û×ª»»£¬²¢ÀÛ¼Óµ½½á¹ûres
+    for (int i = 0; temp[i] != 0; ++i) {
         if (temp[i] >= 48 && temp[i] <= 57){
             res = res * 10 + temp[i] - 48;
+            printf("%d",temp[i] - 48);
         } else{
             return 0;
         }
     }
 
+    printf("%d",res);
     return res;
 }

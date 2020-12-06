@@ -223,6 +223,114 @@ src/outpatient_system.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.s
 .PHONY : src/outpatient_system.c.s
 
+src/read_checkup.obj: src/read_checkup.c.obj
+
+.PHONY : src/read_checkup.obj
+
+# target to build an object file
+src/read_checkup.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.obj
+.PHONY : src/read_checkup.c.obj
+
+src/read_checkup.i: src/read_checkup.c.i
+
+.PHONY : src/read_checkup.i
+
+# target to preprocess a source file
+src/read_checkup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.i
+.PHONY : src/read_checkup.c.i
+
+src/read_checkup.s: src/read_checkup.c.s
+
+.PHONY : src/read_checkup.s
+
+# target to generate assembly for a file
+src/read_checkup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.s
+.PHONY : src/read_checkup.c.s
+
+src/read_doc.obj: src/read_doc.c.obj
+
+.PHONY : src/read_doc.obj
+
+# target to build an object file
+src/read_doc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj
+.PHONY : src/read_doc.c.obj
+
+src/read_doc.i: src/read_doc.c.i
+
+.PHONY : src/read_doc.i
+
+# target to preprocess a source file
+src/read_doc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_doc.c.i
+.PHONY : src/read_doc.c.i
+
+src/read_doc.s: src/read_doc.c.s
+
+.PHONY : src/read_doc.s
+
+# target to generate assembly for a file
+src/read_doc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_doc.c.s
+.PHONY : src/read_doc.c.s
+
+src/read_medicine.obj: src/read_medicine.c.obj
+
+.PHONY : src/read_medicine.obj
+
+# target to build an object file
+src/read_medicine.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj
+.PHONY : src/read_medicine.c.obj
+
+src/read_medicine.i: src/read_medicine.c.i
+
+.PHONY : src/read_medicine.i
+
+# target to preprocess a source file
+src/read_medicine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.i
+.PHONY : src/read_medicine.c.i
+
+src/read_medicine.s: src/read_medicine.c.s
+
+.PHONY : src/read_medicine.s
+
+# target to generate assembly for a file
+src/read_medicine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.s
+.PHONY : src/read_medicine.c.s
+
+src/register_system.obj: src/register_system.c.obj
+
+.PHONY : src/register_system.obj
+
+# target to build an object file
+src/register_system.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj
+.PHONY : src/register_system.c.obj
+
+src/register_system.i: src/register_system.c.i
+
+.PHONY : src/register_system.i
+
+# target to preprocess a source file
+src/register_system.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/register_system.c.i
+.PHONY : src/register_system.c.i
+
+src/register_system.s: src/register_system.c.s
+
+.PHONY : src/register_system.s
+
+# target to generate assembly for a file
+src/register_system.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/register_system.c.s
+.PHONY : src/register_system.c.s
+
 src/time.obj: src/time.c.obj
 
 .PHONY : src/time.obj
@@ -268,6 +376,18 @@ help:
 	@echo ... src/outpatient_system.obj
 	@echo ... src/outpatient_system.i
 	@echo ... src/outpatient_system.s
+	@echo ... src/read_checkup.obj
+	@echo ... src/read_checkup.i
+	@echo ... src/read_checkup.s
+	@echo ... src/read_doc.obj
+	@echo ... src/read_doc.i
+	@echo ... src/read_doc.s
+	@echo ... src/read_medicine.obj
+	@echo ... src/read_medicine.i
+	@echo ... src/read_medicine.s
+	@echo ... src/register_system.obj
+	@echo ... src/register_system.i
+	@echo ... src/register_system.s
 	@echo ... src/time.obj
 	@echo ... src/time.i
 	@echo ... src/time.s

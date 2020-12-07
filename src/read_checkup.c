@@ -1,11 +1,13 @@
 #include "ms.h"
+
 CheckUp *readCheckUp() {
+
     static CheckUp c_list[30] = {
             {
-                "胸透",150,11
+                    11,"胸透",150
             },
             {
-                "血常规",60,12
+                    12,"血常规",60
             }
     };
     return c_list;

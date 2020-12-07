@@ -9,15 +9,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+
 int outpatientSystem(){
+
 
     int os_quit_flag = 0;//门诊系统退出标记
     char time_now[8];//时间字符串
 
     PatientInfo p_list[500];//病人信息数组
-    int p_list_length = 0 ;//病人信息数组长度
     PatientInfo *p = &p_list[p_list_length];
-
     char c_input[100];//字符串输入
     char sc_input;//单个字符输入
     int i_input;
@@ -44,8 +45,6 @@ int outpatientSystem(){
 
                 case '1':
                     if (addRedRecording(p)){//增加挂号记录
-                        p_list_length++;
-                        puts("***********挂号成功********");
                         system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");

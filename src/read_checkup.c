@@ -2,10 +2,10 @@
 CheckUp *readCheckUp() {
     static CheckUp c_list[30] = {
             {
-                "èƒ¸é€",150,11
+                "ĞØÍ¸",150,11
             },
             {
-                "è¡€å¸¸è§„",60,12
+                "Ñª³£¹æ",60,12
             }
     };
     return c_list;

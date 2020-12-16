@@ -331,6 +331,33 @@ src/register_system.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/register_system.c.s
 .PHONY : src/register_system.c.s
 
+src/string_input.obj: src/string_input.c.obj
+
+.PHONY : src/string_input.obj
+
+# target to build an object file
+src/string_input.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/string_input.c.obj
+.PHONY : src/string_input.c.obj
+
+src/string_input.i: src/string_input.c.i
+
+.PHONY : src/string_input.i
+
+# target to preprocess a source file
+src/string_input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/string_input.c.i
+.PHONY : src/string_input.c.i
+
+src/string_input.s: src/string_input.c.s
+
+.PHONY : src/string_input.s
+
+# target to generate assembly for a file
+src/string_input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/string_input.c.s
+.PHONY : src/string_input.c.s
+
 src/time.obj: src/time.c.obj
 
 .PHONY : src/time.obj
@@ -388,6 +415,9 @@ help:
 	@echo ... src/register_system.obj
 	@echo ... src/register_system.i
 	@echo ... src/register_system.s
+	@echo ... src/string_input.obj
+	@echo ... src/string_input.i
+	@echo ... src/string_input.s
 	@echo ... src/time.obj
 	@echo ... src/time.i
 	@echo ... src/time.s

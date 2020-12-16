@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include "ms.h"
 #include <stdlib.h>
+#include <string.h>
+#define HEAD0 "*****************************************"
+#define HEAD1 "-----------------------------------------"
+#define HEAD2 "|挂号编号|姓名|年龄|性别|科室|医生|"
+#define FORMAT "|% "
+#define HEAD3 "|名称|单价|数量|总价|"
+
+//全局变量
+int g_sum = 0;//医院总营收
+int is_save = 0;//是否已经保存
+
 
 int main() {
 
@@ -15,30 +26,33 @@ int main() {
     while (!quit_flag){
 
         system("cls");
-        puts("*********欢迎进入吉林大学医疗系统**********");
+        puts(HEAD0);
+        puts("        欢迎进入吉林大学医疗系统         ");
         sprintf(time_now,"%d",getTime());//获取时间并转换为字符串
         puts("");
-        printf("*********当前系统时间：%s**********\n",time_now);
+        printf("         当前系统时间：%s       \n",time_now);
         puts("");
-        puts("**********请选择需要进入的系统：***********");
+        puts(HEAD1);
+        puts("        请选择需要进入的系统：           ");
+        puts(HEAD1);
         puts("          1---门诊系统                   ");
         puts("          2---住院系统                   ");
         puts("          #---退出系统                   ");
+        puts(HEAD0);
 
         DoctorInfo *d_list = readDoctorInfo();//获取医生信息
         Medicine *m_list = readMedicine();//获取药品信息
         CheckUp *c_list = readCheckUp();
 
-
         while (1){
 
-            sc_input = getchar();
-            while (getchar() != '\n');//跳过输入行剩余部分
-
-            if (sc_input == '\n'){
-                continue;
+            gets(c_input);//获取输入并判断字符串长度
+            while (strlen(c_input) > 1){
+                puts("*********输入错误，请重新输入**********");
+                gets(c_input);
             }
-            switch (sc_input) {
+
+            switch (c_input[0]) {
 
                 case '1':
                     outpatientSystem();//进入门诊系统
@@ -52,17 +66,13 @@ int main() {
                 default:
                     puts("*********输入错误，请重新输入**********");
             }
-            if (sc_input == '1' || sc_input == '2' || sc_input == '#'){
+            if (c_input[0] == '1' || c_input[0] == '2' || c_input[0] == '#'){
                 break;
             }
-            while (getchar() != '\n')//跳过输入行剩余部分
-                continue;
+
         }
 
     }
-
-//    char Time[8];
-//    sprintf(Time,"%d",getTime());//获取时间并转换为字符串
 
     return 0;
 }

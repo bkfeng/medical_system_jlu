@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/CGMS/C/medical_system_jlu/src/read_doc.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj"
   "C:/Users/CGMS/C/medical_system_jlu/src/read_medicine.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj"
   "C:/Users/CGMS/C/medical_system_jlu/src/register_system.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj"
+  "C:/Users/CGMS/C/medical_system_jlu/src/string_input.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/string_input.c.obj"
   "C:/Users/CGMS/C/medical_system_jlu/src/time.c" "C:/Users/CGMS/C/medical_system_jlu/cmake-build-debug/CMakeFiles/medical_system_jlu.dir/src/time.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

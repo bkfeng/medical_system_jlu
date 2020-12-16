@@ -5,30 +5,29 @@
 /*-------全局变量--------*/
 int p_list_length;//病人信息数组长度
 
-
 //病人信息
 typedef struct PatientInfo {
 
-    long long ID;//挂号；月 日 时 分 编号(001-999)
+    long long ID;       //挂号；月 日 时 分 编号(001-999),11位
 
-    char Name[10];//姓名
-    char Age[5];//年龄
-    char Sex[20];//男，女
-    int R_ID;//科室ID
-    int D_ID;//医生ID
-    char CardID[20];//身份证信息
+    char Name[10];      //姓名
+    char Age[5];        //年龄
+    char Sex[20];       //男，女
+    int R_ID;           //科室ID
+    int D_ID;           //医生ID
+    char CardID[20];    //身份证信息
 } PatientInfo; //患者信息
 
 //医生信息
 typedef struct DoctorInfo {
 
-    int ID; //工号
-    int RoomID; //科室Id
+    int ID;              //工号
+    int RoomID;          //科室Id
 
-    char Name[20];//姓名
-    char Rank[20];//主任医师、副主任医师、主治医师、住院医师
-    char sex[20];//男，女
-    char Date[8]; //出诊日期： 0 1 0 1 0 0 1
+    char Name[20];       //姓名
+    char Rank[20];       //主任医师、副主任医师、主治医师、住院医师
+    char sex[20];        //男，女
+    char Date[10];        //出诊日期： 0 1 0 1 0 0 1
 } DoctorInfo; //医生信息
 
 //药品信息
@@ -110,6 +109,7 @@ int outpatientSystem();//门诊系统
 int inhosSystem();//住院系统
 int getNum();//获取数字
 int addRedRecording(PatientInfo *p);//增加挂号记录
+int stringInput(char *d, int lens, int mode);//格式化输入字符串
 
 
 #endif //MEDICAL_SYSTEM_JLU_MS_H

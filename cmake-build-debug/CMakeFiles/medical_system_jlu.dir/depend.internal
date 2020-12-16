@@ -22,5 +22,8 @@ CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj
 CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj
  ../include/ms.h
  C:/Users/CGMS/C/medical_system_jlu/src/register_system.c
+CMakeFiles/medical_system_jlu.dir/src/string_input.c.obj
+ ../include/ms.h
+ C:/Users/CGMS/C/medical_system_jlu/src/string_input.c
 CMakeFiles/medical_system_jlu.dir/src/time.c.obj
  C:/Users/CGMS/C/medical_system_jlu/src/time.c

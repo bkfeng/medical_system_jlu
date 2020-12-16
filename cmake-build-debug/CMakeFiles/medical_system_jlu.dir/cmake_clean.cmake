@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj"
   "CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj"
   "CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj"
+  "CMakeFiles/medical_system_jlu.dir/src/string_input.c.obj"
   "CMakeFiles/medical_system_jlu.dir/src/time.c.obj"
   "libmedical_system_jlu.dll.a"
   "medical_system_jlu.exe"

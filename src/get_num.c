@@ -1,13 +1,11 @@
-/*************
- *
+#include <stdio.h>
+#include "ms.h"
+/******************
  * 获取键盘输入并转为数字
  *
  * 注意：函数只检验是否为数字，不检验长度
+ * @return 1：正确 0：错误
  */
-
-#include <stdio.h>
-#include "ms.h"
-
 int getNum(){
     char temp[20];
     gets(temp);

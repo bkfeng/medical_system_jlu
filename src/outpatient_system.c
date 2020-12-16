@@ -1,16 +1,13 @@
-/************************
- *      门诊系统
- *
- */
-
 #include <ctype.h>
 #include <stdio.h>
 #include "ms.h"
 #include <stdlib.h>
 #include <string.h>
 
-
-
+/**********
+ *
+ * @return 1：正确；  0：错误
+ */
 int outpatientSystem(){
 
 
@@ -36,18 +33,20 @@ int outpatientSystem(){
 
         while (1){
 
-            sc_input = getchar();
-            while (getchar() != '\n');//跳过输入行剩余部分
-            if (sc_input == '\n'){
-                continue;
+            gets(c_input);//获取输入并判断字符串长度
+            while (strlen(c_input) > 1){
+                puts("*********输入错误，请重新输入**********");
+                gets(c_input);
             }
-            switch (sc_input) {
+
+            switch (c_input[0]) {
 
                 case '1':
                     if (addRedRecording(p)){//增加挂号记录
                         system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");
+                        system("pause");//按任意键继续
                     }
                     break;
                 case '2':
@@ -62,7 +61,7 @@ int outpatientSystem(){
                     puts("*********输入错误，请重新输入**********");
             }
 
-            if (sc_input == '1' || sc_input == '2' || sc_input == '3'){
+            if (c_input[0] == '1' || c_input[0] == '2' || c_input[0] == '3'){
                 break;
             }
         }

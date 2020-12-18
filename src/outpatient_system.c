@@ -3,6 +3,8 @@
 #include "ms.h"
 #include <stdlib.h>
 #include <string.h>
+extern int p_list_length;
+extern PatientInfo p_list[];
 
 /**********
  *
@@ -10,11 +12,9 @@
  */
 int outpatientSystem(){
 
-
     int os_quit_flag = 0;//门诊系统退出标记
     char time_now[8];//时间字符串
 
-    PatientInfo p_list[500];//病人信息数组
     PatientInfo *p = &p_list[p_list_length];
     char c_input[100];//字符串输入
     char sc_input;//单个字符输入
@@ -29,7 +29,9 @@ int outpatientSystem(){
         puts("          1---挂号                      ");
         puts("          2---检查                      ");
         puts("          3---开药                      ");
-        puts("          4---返回上层                   ");
+        puts("          4---保存                      ");
+        puts("          5---查询                      ");
+        puts("          0---返回上层                   ");
 
         while (1){
 
@@ -42,7 +44,7 @@ int outpatientSystem(){
             switch (c_input[0]) {
 
                 case '1':
-                    if (addRedRecording(p)){//增加挂号记录
+                    if (addPatientInfo(p)){//增加挂号记录
                         system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");
@@ -55,6 +57,13 @@ int outpatientSystem(){
                 case '3':
 
                 case '4':
+                    if (savePatientInfo()){//保存挂号记录
+                        system("pause");//按任意键继续
+                    } else{
+
+                        system("pause");//按任意键继续
+                    }
+                case '5':
                     os_quit_flag = 1;//退出系统
                     break;
                 default:

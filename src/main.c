@@ -12,16 +12,25 @@
 int g_sum = 0;//医院总营收
 int is_save = 0;//是否已经保存
 
+PatientInfo p_h_list[5000];//病人信息历史数组，已保存
+int p_h_list_length = 0;//病人信息历史数组长度
+
+PatientInfo p_list[500];//病人信息临时数组，未保存
+int p_list_length = 0;//病人信息临时数组长度
 
 int main() {
-
-     p_list_length = 0;
 
     int quit_flag = 0;//系统退出标记
     char time_now[8];//时间字符串
     char c_input[100];//字符串输入
     char sc_input;//单个字符输入
     int i_input;
+
+    DoctorInfo *d_list = loadDoctorInfo();//获取医生信息
+    Medicine *m_list = loadMedicine();//获取药品信息
+    CheckUp *c_list = loadCheckUp();
+
+    loadPatientInfo();
 
     while (!quit_flag){
 
@@ -40,9 +49,6 @@ int main() {
         puts("          #---退出系统                   ");
         puts(HEAD0);
 
-        DoctorInfo *d_list = readDoctorInfo();//获取医生信息
-        Medicine *m_list = readMedicine();//获取药品信息
-        CheckUp *c_list = readCheckUp();
 
         while (1){
 

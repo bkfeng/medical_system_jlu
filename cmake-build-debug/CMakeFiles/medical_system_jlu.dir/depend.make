@@ -4,23 +4,29 @@
 CMakeFiles/medical_system_jlu.dir/src/get_num.c.obj: ../include/ms.h
 CMakeFiles/medical_system_jlu.dir/src/get_num.c.obj: ../src/get_num.c
 
+CMakeFiles/medical_system_jlu.dir/src/load_checkup.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/load_checkup.c.obj: ../src/load_checkup.c
+
+CMakeFiles/medical_system_jlu.dir/src/load_doc.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/load_doc.c.obj: ../src/load_doc.c
+
+CMakeFiles/medical_system_jlu.dir/src/load_medicine.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/load_medicine.c.obj: ../src/load_medicine.c
+
+CMakeFiles/medical_system_jlu.dir/src/load_pi_list.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/load_pi_list.c.obj: ../src/load_pi_list.c
+
 CMakeFiles/medical_system_jlu.dir/src/main.c.obj: ../include/ms.h
 CMakeFiles/medical_system_jlu.dir/src/main.c.obj: ../src/main.c
 
 CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: ../include/ms.h
 CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.obj: ../src/outpatient_system.c
 
-CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.obj: ../include/ms.h
-CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.obj: ../src/read_checkup.c
-
-CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj: ../include/ms.h
-CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj: ../src/read_doc.c
-
-CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj: ../include/ms.h
-CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj: ../src/read_medicine.c
-
 CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj: ../include/ms.h
 CMakeFiles/medical_system_jlu.dir/src/register_system.c.obj: ../src/register_system.c
+
+CMakeFiles/medical_system_jlu.dir/src/save_pi_list.c.obj: ../include/ms.h
+CMakeFiles/medical_system_jlu.dir/src/save_pi_list.c.obj: ../src/save_pi_list.c
 
 CMakeFiles/medical_system_jlu.dir/src/string_input.c.obj: ../include/ms.h
 CMakeFiles/medical_system_jlu.dir/src/string_input.c.obj: ../src/string_input.c

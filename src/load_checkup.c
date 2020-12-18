@@ -1,6 +1,6 @@
 #include "ms.h"
 
-CheckUp *readCheckUp() {
+CheckUp *loadCheckUp() {
 
     static CheckUp c_list[30] = {
             {

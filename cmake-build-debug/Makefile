@@ -169,6 +169,114 @@ src/get_num.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/get_num.c.s
 .PHONY : src/get_num.c.s
 
+src/load_checkup.obj: src/load_checkup.c.obj
+
+.PHONY : src/load_checkup.obj
+
+# target to build an object file
+src/load_checkup.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_checkup.c.obj
+.PHONY : src/load_checkup.c.obj
+
+src/load_checkup.i: src/load_checkup.c.i
+
+.PHONY : src/load_checkup.i
+
+# target to preprocess a source file
+src/load_checkup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_checkup.c.i
+.PHONY : src/load_checkup.c.i
+
+src/load_checkup.s: src/load_checkup.c.s
+
+.PHONY : src/load_checkup.s
+
+# target to generate assembly for a file
+src/load_checkup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_checkup.c.s
+.PHONY : src/load_checkup.c.s
+
+src/load_doc.obj: src/load_doc.c.obj
+
+.PHONY : src/load_doc.obj
+
+# target to build an object file
+src/load_doc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_doc.c.obj
+.PHONY : src/load_doc.c.obj
+
+src/load_doc.i: src/load_doc.c.i
+
+.PHONY : src/load_doc.i
+
+# target to preprocess a source file
+src/load_doc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_doc.c.i
+.PHONY : src/load_doc.c.i
+
+src/load_doc.s: src/load_doc.c.s
+
+.PHONY : src/load_doc.s
+
+# target to generate assembly for a file
+src/load_doc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_doc.c.s
+.PHONY : src/load_doc.c.s
+
+src/load_medicine.obj: src/load_medicine.c.obj
+
+.PHONY : src/load_medicine.obj
+
+# target to build an object file
+src/load_medicine.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_medicine.c.obj
+.PHONY : src/load_medicine.c.obj
+
+src/load_medicine.i: src/load_medicine.c.i
+
+.PHONY : src/load_medicine.i
+
+# target to preprocess a source file
+src/load_medicine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_medicine.c.i
+.PHONY : src/load_medicine.c.i
+
+src/load_medicine.s: src/load_medicine.c.s
+
+.PHONY : src/load_medicine.s
+
+# target to generate assembly for a file
+src/load_medicine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_medicine.c.s
+.PHONY : src/load_medicine.c.s
+
+src/load_pi_list.obj: src/load_pi_list.c.obj
+
+.PHONY : src/load_pi_list.obj
+
+# target to build an object file
+src/load_pi_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_pi_list.c.obj
+.PHONY : src/load_pi_list.c.obj
+
+src/load_pi_list.i: src/load_pi_list.c.i
+
+.PHONY : src/load_pi_list.i
+
+# target to preprocess a source file
+src/load_pi_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_pi_list.c.i
+.PHONY : src/load_pi_list.c.i
+
+src/load_pi_list.s: src/load_pi_list.c.s
+
+.PHONY : src/load_pi_list.s
+
+# target to generate assembly for a file
+src/load_pi_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/load_pi_list.c.s
+.PHONY : src/load_pi_list.c.s
+
 src/main.obj: src/main.c.obj
 
 .PHONY : src/main.obj
@@ -223,87 +331,6 @@ src/outpatient_system.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/outpatient_system.c.s
 .PHONY : src/outpatient_system.c.s
 
-src/read_checkup.obj: src/read_checkup.c.obj
-
-.PHONY : src/read_checkup.obj
-
-# target to build an object file
-src/read_checkup.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.obj
-.PHONY : src/read_checkup.c.obj
-
-src/read_checkup.i: src/read_checkup.c.i
-
-.PHONY : src/read_checkup.i
-
-# target to preprocess a source file
-src/read_checkup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.i
-.PHONY : src/read_checkup.c.i
-
-src/read_checkup.s: src/read_checkup.c.s
-
-.PHONY : src/read_checkup.s
-
-# target to generate assembly for a file
-src/read_checkup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_checkup.c.s
-.PHONY : src/read_checkup.c.s
-
-src/read_doc.obj: src/read_doc.c.obj
-
-.PHONY : src/read_doc.obj
-
-# target to build an object file
-src/read_doc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_doc.c.obj
-.PHONY : src/read_doc.c.obj
-
-src/read_doc.i: src/read_doc.c.i
-
-.PHONY : src/read_doc.i
-
-# target to preprocess a source file
-src/read_doc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_doc.c.i
-.PHONY : src/read_doc.c.i
-
-src/read_doc.s: src/read_doc.c.s
-
-.PHONY : src/read_doc.s
-
-# target to generate assembly for a file
-src/read_doc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_doc.c.s
-.PHONY : src/read_doc.c.s
-
-src/read_medicine.obj: src/read_medicine.c.obj
-
-.PHONY : src/read_medicine.obj
-
-# target to build an object file
-src/read_medicine.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.obj
-.PHONY : src/read_medicine.c.obj
-
-src/read_medicine.i: src/read_medicine.c.i
-
-.PHONY : src/read_medicine.i
-
-# target to preprocess a source file
-src/read_medicine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.i
-.PHONY : src/read_medicine.c.i
-
-src/read_medicine.s: src/read_medicine.c.s
-
-.PHONY : src/read_medicine.s
-
-# target to generate assembly for a file
-src/read_medicine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/read_medicine.c.s
-.PHONY : src/read_medicine.c.s
-
 src/register_system.obj: src/register_system.c.obj
 
 .PHONY : src/register_system.obj
@@ -330,6 +357,33 @@ src/register_system.s: src/register_system.c.s
 src/register_system.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/register_system.c.s
 .PHONY : src/register_system.c.s
+
+src/save_pi_list.obj: src/save_pi_list.c.obj
+
+.PHONY : src/save_pi_list.obj
+
+# target to build an object file
+src/save_pi_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/save_pi_list.c.obj
+.PHONY : src/save_pi_list.c.obj
+
+src/save_pi_list.i: src/save_pi_list.c.i
+
+.PHONY : src/save_pi_list.i
+
+# target to preprocess a source file
+src/save_pi_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/save_pi_list.c.i
+.PHONY : src/save_pi_list.c.i
+
+src/save_pi_list.s: src/save_pi_list.c.s
+
+.PHONY : src/save_pi_list.s
+
+# target to generate assembly for a file
+src/save_pi_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\medical_system_jlu.dir\build.make CMakeFiles/medical_system_jlu.dir/src/save_pi_list.c.s
+.PHONY : src/save_pi_list.c.s
 
 src/string_input.obj: src/string_input.c.obj
 
@@ -397,24 +451,30 @@ help:
 	@echo ... src/get_num.obj
 	@echo ... src/get_num.i
 	@echo ... src/get_num.s
+	@echo ... src/load_checkup.obj
+	@echo ... src/load_checkup.i
+	@echo ... src/load_checkup.s
+	@echo ... src/load_doc.obj
+	@echo ... src/load_doc.i
+	@echo ... src/load_doc.s
+	@echo ... src/load_medicine.obj
+	@echo ... src/load_medicine.i
+	@echo ... src/load_medicine.s
+	@echo ... src/load_pi_list.obj
+	@echo ... src/load_pi_list.i
+	@echo ... src/load_pi_list.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
 	@echo ... src/outpatient_system.obj
 	@echo ... src/outpatient_system.i
 	@echo ... src/outpatient_system.s
-	@echo ... src/read_checkup.obj
-	@echo ... src/read_checkup.i
-	@echo ... src/read_checkup.s
-	@echo ... src/read_doc.obj
-	@echo ... src/read_doc.i
-	@echo ... src/read_doc.s
-	@echo ... src/read_medicine.obj
-	@echo ... src/read_medicine.i
-	@echo ... src/read_medicine.s
 	@echo ... src/register_system.obj
 	@echo ... src/register_system.i
 	@echo ... src/register_system.s
+	@echo ... src/save_pi_list.obj
+	@echo ... src/save_pi_list.i
+	@echo ... src/save_pi_list.s
 	@echo ... src/string_input.obj
 	@echo ... src/string_input.i
 	@echo ... src/string_input.s

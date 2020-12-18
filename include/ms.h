@@ -2,13 +2,11 @@
 #ifndef MEDICAL_SYSTEM_JLU_MS_H
 #define MEDICAL_SYSTEM_JLU_MS_H
 
-/*-------全局变量--------*/
-int p_list_length;//病人信息数组长度
 
 //病人信息
 typedef struct PatientInfo {
 
-    long long ID;       //挂号；月 日 时 分 编号(001-999),11位
+    long long ID;       //挂号:1  月 日 时 分 编号(001-999),11位。例如
 
     char Name[10];      //姓名
     char Age[5];        //年龄
@@ -51,26 +49,26 @@ typedef struct CheckUp {
 //门诊检查
 typedef struct TreatCheck {
 
-    long long ID;//挂号；月 日 时 分 编号(00001-99999)
+    long long ID;//诊疗记录编号；月 日 时 分 编号(00001-99999)
 
     int C_ID;//检查id
     int Num;//数量
     double Total;//总价
     long long PatientID;
+    int Flag;//有效位标志 1有效
 } TreatCheck; //检查
 
 //门诊开药
 typedef struct TreatMed {
 
-    long long ID;//挂号；月 日 时 分 编号(00001-99999)
+    long long ID;//诊疗记录编号；月 日 时 分 编号(00001-99999)
 
     int M_ID;//药品id
     int Num; //数量
     double Total;
     long long PatientID;//病人ID
+    int Flag;//有效位标志 1有效
 } TreatMed; //开药
-
-
 
 
 //住院信息
@@ -100,16 +98,18 @@ typedef struct TreatRecord {
 /*-----------函数-------------*/
 
 
-DoctorInfo *readDoctorInfo();//获取医生信息
-Medicine *readMedicine();//获取医生信息
-CheckUp *readCheckUp();//获取检查信息
+DoctorInfo *loadDoctorInfo();//获取医生信息
+Medicine *loadMedicine();//获取医生信息
+CheckUp *loadCheckUp();//获取检查信息
 
 int getTime();//获取当前时间
 int outpatientSystem();//门诊系统
 int inhosSystem();//住院系统
 int getNum();//获取数字
-int addRedRecording(PatientInfo *p);//增加挂号记录
+int addPatientInfo(PatientInfo *p);//增加挂号记录
 int stringInput(char *d, int lens, int mode);//格式化输入字符串
+int savePatientInfo();//保存门诊记录
+int loadPatientInfo();//读取门诊记录
 
 
 #endif //MEDICAL_SYSTEM_JLU_MS_H

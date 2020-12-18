@@ -87,22 +87,28 @@
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/get_num.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/load_checkup.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/load_doc.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/load_medicine.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/load_pi_list.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/main.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/outpatient_system.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>
-		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/read_checkup.c">
-			<Option target="medical_system_jlu"/>
-		</Unit>
-		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/read_doc.c">
-			<Option target="medical_system_jlu"/>
-		</Unit>
-		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/read_medicine.c">
-			<Option target="medical_system_jlu"/>
-		</Unit>
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/register_system.c">
+			<Option target="medical_system_jlu"/>
+		</Unit>
+		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/save_pi_list.c">
 			<Option target="medical_system_jlu"/>
 		</Unit>
 		<Unit filename="C:/Users/CGMS/C/medical_system_jlu/src/string_input.c">

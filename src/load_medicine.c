@@ -1,6 +1,6 @@
 #include "ms.h"
 
-Medicine *readMedicine(){
+Medicine *loadMedicine(){
     static Medicine m_list[30] = {
             {
                     11,"°¢ÄªÎ÷ÁÖ",15

@@ -1,6 +1,6 @@
 #include "ms.h"
 
-DoctorInfo *readDoctorInfo(){
+DoctorInfo *loadDoctorInfo(){
 
     static DoctorInfo d_list[10] = {
             {

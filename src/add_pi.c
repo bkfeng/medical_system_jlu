@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "ms.h"
 #include <string.h>
+extern int p_list_length;
 
 /*****************
  * 增加一条挂号记录
@@ -8,7 +9,7 @@
  * @return 1：正确；  0：错误
  */
 
-int addRedRecording(PatientInfo *p){
+int addPatientInfo(PatientInfo *p){
 
     PatientInfo pi_temp;
 

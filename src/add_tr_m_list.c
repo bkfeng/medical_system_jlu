@@ -49,6 +49,7 @@ int addTreatMedList(TreatMed *p){
         g_sum += tr_temp.Total;//记录到医院总营收中
 
         tr_temp.ID = (long long)getTime() * 10000 + 5000 + tr_m_list_length + 1;//生成ID 5001-9999
+        printf("%lld\n",tr_temp.ID);
 
         //如果上述均正确
         memcpy(p + tr_m_list_length, &tr_temp, sizeof(tr_temp));//临时结构体赋给p指向的数组元素

@@ -6,11 +6,8 @@ extern TreatMed tr_m_list[];
 int queryOS() {
 
     int q_quit_flag = 0;//门诊查询系统退出标记
-    char time_now[8];//时间字符串
 
     char c_input[100];//字符串输入
-    char sc_input;//单个字符输入
-    int i_input;
 
     while (!q_quit_flag) {
 
@@ -18,9 +15,10 @@ int queryOS() {
         puts("*************欢迎进入门诊查询系统**************");
         puts("");
         puts("**********请选择需要进行的操作：***********");
-        puts("          1---查询患者诊疗信息                      ");
+        puts("          1---查询患者诊疗信息并编辑                 ");
         puts("          2---查询科室诊疗记录                     ");
         puts("          3---查询医生诊疗记录                      ");
+        puts("          4---查询某时段诊疗记录                     ");
         puts("          0---返回上层                      ");
 
         while (1) {

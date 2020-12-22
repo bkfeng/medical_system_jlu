@@ -124,6 +124,8 @@ int savePatientInfo();//保存门诊记录
 int queryOS();//查询门诊诊疗记录
 int queryTreatMedPatientInfo(TreatMed *p);//查询病人诊疗记录
 
+int modifyTreatList(long long id);//修改删除记录
+
 /*--------宏定义---------*/
 #define HEAD0 "*****************************************"
 #define HEAD1 "-----------------------------------------"

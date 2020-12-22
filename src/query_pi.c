@@ -33,8 +33,7 @@ int queryTreatMedPatientInfo(TreatMed *p){
                 if (tr_m_list[j].PatientID == p_list[i].ID &&
                 tr_m_list[j].Flag == 1){           //筛选符合挂号编号的记录并检查标志位是否有效
 
-
-                    t[i] = tr_m_list[j].ID;
+                    t[ti] = tr_m_list[j].ID;
                     ti++;
                     printf("|%3d.",ti);
                     printf(FORMAT3,DATA3);
@@ -55,7 +54,7 @@ int queryTreatMedPatientInfo(TreatMed *p){
                 if (tr_c_list[j].PatientID == p_list[i].ID &&
                 tr_c_list[j].Flag == 1){         //筛选符合挂号编号的记录并检查标志位是否有效
 
-                    t[i] = tr_c_list[j].ID;
+                    t[ti] = tr_c_list[j].ID;
                     ti++;
                     printf("|%3d.",ti);
                     printf(FORMAT4,DATA4);
@@ -68,7 +67,7 @@ int queryTreatMedPatientInfo(TreatMed *p){
     puts("退出请输入“0”。如需对诊疗记录进行修改或删除，请输入记录对应序号：\n");
     int i = getNum();
     if (i){
-        modifyTreatList(t[i]);
+        modifyTreatList(t[i-1]);
     }
     return 1;
 

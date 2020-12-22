@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "ms.h"
 #include <string.h>
-extern int p_list_length;
+extern int p_list_length;//病人信息数组长度
+extern int p_list_length_new;//新增病人信息数组长度
 
 /*****************
  * 增加一条挂号记录

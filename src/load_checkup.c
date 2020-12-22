@@ -4,10 +4,10 @@ CheckUp *loadCheckUp() {
 
     static CheckUp c_list[30] = {
             {
-                    11,"胸透",150
+                    0,"胸透",150
             },
             {
-                    12,"血常规",60
+                    1,"血常规",60
             }
     };
     return c_list;

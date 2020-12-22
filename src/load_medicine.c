@@ -3,10 +3,10 @@
 Medicine *loadMedicine(){
     static Medicine m_list[30] = {
             {
-                    11,"阿莫西林",15
+                    0,"阿莫西林",15
             },
             {
-                    12,"感康",13.5
+                    1,"感康",13.5
             }
     };
     return m_list;

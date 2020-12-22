@@ -4,11 +4,11 @@
 #include "ms.h"
 
 /********
- * åŠŸèƒ½ï¼šè¾“å…¥å­—ç¬¦ä¸²å¹¶éªŒè¯
- * @param d å­—ç¬¦ä¸²åœ°å€
- * @param lens æœ€å¤§é•¿åº¦
- * @param mode 1ï¼šæ•°å­—  2ï¼šå­—æ¯
- * @return 1ï¼šæ­£ç¡® 0ï¼šé”™è¯¯
+ * ¹¦ÄÜ£ºÊäÈë×Ö·û´®²¢ÑéÖ¤
+ * @param d ×Ö·û´®µØÖ·
+ * @param lens ×î´ó³¤¶È
+ * @param mode 1£ºÊı×Ö  2£º×ÖÄ¸
+ * @return 1£ºÕıÈ· 0£º´íÎó
  */
 int stringInput(char *d, int lens, int mode) {
 
@@ -35,6 +35,6 @@ int stringInput(char *d, int lens, int mode) {
         }
     }
 
-    strcpy(d,t);//å°†ä¸´æ—¶æ•°ç»„å†…å®¹æ‹·è´åˆ°æŒ‡å®šåœ°å€
+    strcpy(d,t);//½«ÁÙÊ±Êı×éÄÚÈİ¿½±´µ½Ö¸¶¨µØÖ·
     return 1;
 }

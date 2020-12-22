@@ -31,7 +31,7 @@ typedef struct DoctorInfo {
 //药品信息
 typedef struct Medicine {
 
-    int ID;//  1-50
+    int ID;//
 
     char Name[20];//药品名称
     double Unit; //药品单价
@@ -40,7 +40,7 @@ typedef struct Medicine {
 //检查信息
 typedef struct CheckUp {
 
-    int ID;//  51-99
+    int ID;//
 
     char Name[20];//检查名称
     double Unit; //检查单价
@@ -106,11 +106,38 @@ int getTime();//获取当前时间
 int outpatientSystem();//门诊系统
 int inhosSystem();//住院系统
 int getNum();//获取数字
-int addPatientInfo(PatientInfo *p);//增加挂号记录
-int stringInput(char *d, int lens, int mode);//格式化输入字符串
-int savePatientInfo();//保存门诊记录
-int loadPatientInfo();//读取门诊记录
 
+int addPatientInfo(PatientInfo *p);//增加挂号记录
+int addTreatMedList(TreatMed *p);//增加开药记录
+int addTreatCheList(TreatCheck *p);//增加检查记录
+
+int stringInput(char *d, int lens, int mode);//格式化输入字符串
+
+int loadPatientInfo();//导入门诊记录
+int loadTreatMedList();//导入开药记录
+int loadTreatCheckList();//导入开药记录
+
+int saveTreatMedLIst();//保存开药记录
+int saveTreatCheckLIst();//保存检查记录
+int savePatientInfo();//保存门诊记录
+
+int queryOS();//查询门诊诊疗记录
+int queryTreatMedPatientInfo(TreatMed *p);//查询病人诊疗记录
+
+/*--------宏定义---------*/
+#define HEAD0 "*****************************************"
+#define HEAD1 "-----------------------------------------"
+
+#define HEAD2 "|挂号编号|姓名|年龄|性别|科室|医生|"
+#define FORMAT2 "|%-10s|%.2f|\n "
+
+#define HEAD3 "|序号|挂号编号       |名称      |单价   |数量|总价   |"
+#define FORMAT3 "|%15lld|%-10s|%7.2f|%4d|%7.2f|\n"
+#define DATA3 tr_m_list[j].PatientID,m_list[tr_m_list[j].M_ID].Name,m_list[tr_m_list[j].M_ID].Unit,tr_m_list[j].Num,tr_m_list[j].Total
+
+#define HEAD4 "|序号|挂号编号       |名称      |单价   |数量|总价   |"
+#define FORMAT4 "|%15lld|%-10s|%7.2f|%4d|%7.2f|\n"
+#define DATA4 tr_c_list[j].PatientID,c_list[tr_c_list[j].C_ID].Name,c_list[tr_c_list[j].C_ID].Unit,tr_c_list[j].Num,tr_c_list[j].Total
 
 #endif //MEDICAL_SYSTEM_JLU_MS_H
 

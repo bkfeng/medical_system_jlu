@@ -2,21 +2,49 @@
 #include "ms.h"
 #include <stdlib.h>
 #include <string.h>
-#define HEAD0 "*****************************************"
-#define HEAD1 "-----------------------------------------"
-#define HEAD2 "|挂号编号|姓名|年龄|性别|科室|医生|"
-#define FORMAT "|% "
-#define HEAD3 "|名称|单价|数量|总价|"
 
 //全局变量
-int g_sum = 0;//医院总营收
+double g_sum = 0;//医院总营收
 int is_save = 0;//是否已经保存
 
-PatientInfo p_h_list[5000];//病人信息历史数组，已保存
-int p_h_list_length = 0;//病人信息历史数组长度
+PatientInfo p_list[5000];//挂号记录，已保存
+int p_list_length = 0;//病人信息历史数组长度
+int p_list_length_new = 0;//新增病人信息历史数组长度
 
-PatientInfo p_list[500];//病人信息临时数组，未保存
-int p_list_length = 0;//病人信息临时数组长度
+TreatMed tr_m_list[5000];//诊疗记录  开药
+int tr_m_list_length = 0;//诊疗记录长度
+int tr_m_list_length_new = 0;//新增诊疗记录长度
+
+TreatCheck tr_c_list[5000];//诊疗记录  检查
+int tr_c_list_length = 0;//诊疗记录长度
+int tr_c_list_length_new = 0;//新增诊疗记录长度
+
+Medicine m_list[30] = {
+        {
+                0,"阿莫西林",15
+        },
+        {
+                1,"感康",13.5
+        }
+};
+
+CheckUp c_list[30] = {
+        {
+                0,"胸透",150
+        },
+        {
+                1,"血常规",60
+        }
+};
+
+DoctorInfo d_list[10] = {
+        {
+                0,11,"张三","主任医师","男","0101010"
+        },
+        {
+                1,12,"李四","主任医师","男","1010101"
+        }
+};
 
 int main() {
 
@@ -26,11 +54,15 @@ int main() {
     char sc_input;//单个字符输入
     int i_input;
 
-    DoctorInfo *d_list = loadDoctorInfo();//获取医生信息
-    Medicine *m_list = loadMedicine();//获取药品信息
-    CheckUp *c_list = loadCheckUp();
+//    DoctorInfo *d_list = loadDoctorInfo();//获取医生信息
+//    m_list = loadMedicine();//获取药品信息
+//    CheckUp *c_list = loadCheckUp();
 
+    /*----导入历史记录----*/
     loadPatientInfo();
+    loadTreatMedList();
+    loadTreatCheckList();
+    system("pause");//按任意键继续
 
     while (!quit_flag){
 

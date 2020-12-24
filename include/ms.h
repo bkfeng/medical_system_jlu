@@ -119,7 +119,7 @@ int stringInput(char *d, int lens, int mode);//格式化输入字符串
 
 int loadPatientInfo();//导入门诊记录
 int loadTreatMedList();//导入开药记录
-int loadTreatCheckList();//导入开药记录
+int loadTreatCheckList();//导入检查记录
 
 int saveTreatMedLIst();//保存开药记录
 int saveTreatCheckLIst();//保存检查记录

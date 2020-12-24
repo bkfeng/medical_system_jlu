@@ -10,7 +10,7 @@ extern TreatMed tr_m_list[];
 
 extern int tr_c_list_length;
 extern TreatCheck tr_c_list[];
-
+extern double g_sum;
 /**********
  * 门诊系统
  * @return 1：正确；  0：错误
@@ -18,15 +18,12 @@ extern TreatCheck tr_c_list[];
 int outpatientSystem(){
 
     int os_quit_flag = 0;//门诊系统退出标记
-    char time_now[8];//时间字符串
 
     PatientInfo *p = p_list;
     TreatMed *m = tr_m_list;
     TreatCheck *c = tr_c_list;
 
     char c_input[100];//字符串输入
-    char sc_input;//单个字符输入
-    int i_input;
 
     while (!os_quit_flag){
 
@@ -40,7 +37,8 @@ int outpatientSystem(){
         puts("          4---保存                      ");
         puts("          5---查询及编辑                 ");
         puts("          6---导入                      ");
-        puts("          7---医生出诊情况                  ");
+        puts("          7---医生出诊情况                 ");
+        puts("          8---统计医院营收                 ");
         puts("          0---返回上层                   ");
 
         while (1){
@@ -78,7 +76,7 @@ int outpatientSystem(){
                     }
                     break;
                 case '4':
-                    if (savePatientInfo() && saveTreatMedLIst() && saveTreatCheckLIst()){//保存挂号记录
+                    if (savePatientInfo() && saveTreatMedLIst() && saveTreatCheckLIst()){//保存挂号记录、诊疗记录
                         system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");
@@ -94,7 +92,7 @@ int outpatientSystem(){
                     }
                     break;
                 case '6':
-                    if (importTreatList()){//查询诊疗记录
+                    if (importTreatList()){//导入诊疗记录
                         system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");
@@ -102,12 +100,16 @@ int outpatientSystem(){
                     }
                     break;
                 case '7':
-                    if (countDoctor()){//查询诊疗记录
+                    if (countDoctor()){//统计医生出诊
                         system("pause");//按任意键继续
                     } else{
                         puts("***********输入错误，请重新选择********");
                         system("pause");//按任意键继续
                     }
+                    break;
+                case '8':
+                    printf("总营业额为：%.2f\n",g_sum);
+                    system("pause");//按任意键继续
                     break;
                 case '0':
                     os_quit_flag = 1;//退出系统

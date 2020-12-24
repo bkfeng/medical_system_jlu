@@ -5,12 +5,12 @@
 
 extern TreatCheck tr_c_list[];//诊疗记录
 extern int tr_c_list_length;//诊疗记录长度
-extern int tr_c_list_length_new;//新增诊疗记录长度
+//extern int tr_c_list_length_new;//新增诊疗记录长度
 extern CheckUp c_list[];//药品信息
 
 extern PatientInfo p_list[];//病人信息数组
 extern int p_list_length;//病人信息数组长度
-extern int p_list_length_new;//新增病人信息数组长度
+//extern int p_list_length_new;//新增病人信息数组长度
 
 extern double g_sum;
 extern int is_save;
@@ -19,7 +19,7 @@ int addTreatCheList(TreatCheck *p){
 
     TreatCheck tr_temp;
     tr_temp.Flag = 1;
-    int f = 0;
+    int f;
     int q = 0;
     char temp[255];
     long long pid[5];

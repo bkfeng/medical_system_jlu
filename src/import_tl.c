@@ -4,12 +4,12 @@
 
 extern TreatCheck tr_c_list[];//诊疗记录  检查
 extern int tr_c_list_length;//诊疗记录长度
-extern int tr_c_list_length_new;//新增诊疗记录长度
+//extern int tr_c_list_length_new;//新增诊疗记录长度
 extern CheckUp c_list[];//药品信息
 
 extern TreatMed tr_m_list[];//诊疗记录   开药
 extern int tr_m_list_length;//诊疗记录长度
-extern int tr_m_list_length_new;//新增诊疗记录长度
+//extern int tr_m_list_length_new;//新增诊疗记录长度
 extern Medicine m_list[];
 
 extern double g_sum;
@@ -20,9 +20,6 @@ int importTreatList() {
     tr_c_temp.Flag = 1;
     tr_m_temp.Flag = 1;
     int count = 0;
-    int f;
-    char temp[255];
-
     FILE *fp;
 
     /*----------导入检查记录-------------*/

@@ -7,17 +7,17 @@
 double g_sum = 0;//医院总营收
 int is_save = 1;//是否已经保存。1--已保存，0--未保存
 
-PatientInfo p_list[5000];//挂号记录，已保存
+PatientInfo p_list[5000];//挂号记录
 int p_list_length = 0;//病人信息历史数组长度
-int p_list_length_new = 0;//新增病人信息历史数组长度
+//int p_list_length_new = 0;//新增病人信息历史数组长度
 
 TreatMed tr_m_list[5000];//诊疗记录  开药
 int tr_m_list_length = 0;//诊疗记录长度
-int tr_m_list_length_new = 0;//新增诊疗记录长度
+//int tr_m_list_length_new = 0;//新增诊疗记录长度
 
 TreatCheck tr_c_list[5000];//诊疗记录  检查
 int tr_c_list_length = 0;//诊疗记录长度
-int tr_c_list_length_new = 0;//新增诊疗记录长度
+//int tr_c_list_length_new = 0;//新增诊疗记录长度
 
 Medicine m_list[30] = {
         {
@@ -87,8 +87,6 @@ int main() {
     int quit_flag = 0;//系统退出标记
     char time_now[8];//时间字符串
     char c_input[100];//字符串输入
-    char sc_input;//单个字符输入
-    int i_input;
 
 //    DoctorInfo *d_list = loadDoctorInfo();//获取医生信息
 //    m_list = loadMedicine();//获取药品信息
@@ -132,7 +130,7 @@ int main() {
                     outpatientSystem();//进入门诊系统
                     break;
                 case '2':
-//                    inhosSystem();//进入医疗系统
+//
                     break;
                 case '#':
                     if (is_save){

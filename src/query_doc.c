@@ -1,6 +1,5 @@
 #include "ms.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
 extern TreatMed tr_m_list[];//诊疗记录
@@ -18,7 +17,7 @@ int queryTreatDoctor(){
 
     int ti = 0;
     long long t[100];
-    int did = 0;
+    int did;
 
     char c[20];
     puts("请输入医生编号");

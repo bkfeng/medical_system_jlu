@@ -5,12 +5,12 @@
 
 extern TreatMed tr_m_list[];//诊疗记录
 extern int tr_m_list_length;//诊疗记录长度
-extern int tr_m_list_length_new;//新增诊疗记录长度
+//extern int tr_m_list_length_new;//新增诊疗记录长度
 extern Medicine m_list[];
 
 extern PatientInfo p_list[];//病人信息数组
 extern int p_list_length;//病人信息数组长度
-extern int p_list_length_new;//新增病人信息数组长度
+//extern int p_list_length_new;//新增病人信息数组长度
 
 extern double g_sum;
 extern int is_save;
@@ -19,10 +19,10 @@ int addTreatMedList(TreatMed *p){
 
     TreatMed tr_temp;
     tr_temp.Flag = 1;
-    int f = 0;
+    int f;
     int q = 0;
     char temp[255];
-    int pid[5];
+    long long pid[5];
 
     puts("近5位患者编号分别为：");
     puts(HEAD5);

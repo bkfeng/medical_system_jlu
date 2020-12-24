@@ -1,6 +1,5 @@
 #include "ms.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
 extern TreatMed tr_m_list[];//ÕïÁÆ¼ÇÂ¼

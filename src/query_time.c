@@ -1,6 +1,5 @@
 #include "ms.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
 extern TreatMed tr_m_list[];//诊疗记录
@@ -18,8 +17,8 @@ int queryTreatTime(){
 
     int ti = 0;
     long long t[100];
-    int time_start = 0;
-    int time_end = 0;
+    int time_start;
+    int time_end;
 
     char c[20];
     puts("请输开始时间（例如12月20日18点35分则输入”12201835“）：");

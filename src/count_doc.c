@@ -1,22 +1,21 @@
 #include "ms.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 extern DoctorInfo d_list[];
 
 extern TreatCheck tr_c_list[];//诊疗记录
 extern int tr_c_list_length;//诊疗记录长度
-extern int tr_c_list_length_new;//新增诊疗记录长度
+//extern int tr_c_list_length_new;//新增诊疗记录长度
 extern CheckUp c_list[];//药品信息
 
 extern TreatMed tr_m_list[];//诊疗记录
 extern int tr_m_list_length;//诊疗记录长度
-extern int tr_m_list_length_new;//新增诊疗记录长度
+//extern int tr_m_list_length_new;//新增诊疗记录长度
 extern Medicine m_list[];
 
 extern PatientInfo p_list[];//病人信息数组
 extern int p_list_length;//病人信息数组长度
-extern int p_list_length_new;//新增病人信息数组长度
+//extern int p_list_length_new;//新增病人信息数组长度
 
 int countDoctor() {
 
@@ -26,7 +25,7 @@ int countDoctor() {
     for (int i = 0; i < 6; ++i) {
         int count = 0;
         for (int j = 0; j < p_list_length; ++j) {
-            if (d_list[i].ID == p_list[j].D_ID && p_list[j].ID / 1e7 >= getTime() / 1e4) {
+            if (d_list[i].ID == p_list[j].D_ID && (p_list[j].ID / 10000000) == (getTime() / 10000)) {
                 count++;
             }
         }
@@ -41,4 +40,5 @@ int countDoctor() {
         printf("\n");
 
     }
+    return 1;
 }

@@ -2,7 +2,7 @@
 #include "ms.h"
 #include <string.h>
 extern int p_list_length;//病人信息数组长度
-extern int p_list_length_new;//新增病人信息数组长度
+//extern int p_list_length_new;//新增病人信息数组长度
 extern int is_save;
 
 /*****************
@@ -17,7 +17,7 @@ int addPatientInfo(PatientInfo *p){
 
     puts("请输入病人姓名：");
     gets(pi_temp.Name);
-    puts(pi_temp.Name);
+//    puts(pi_temp.Name);
 
     puts("请输入病人身份证号：");
     if (!stringInput(pi_temp.CardID,18,1)){
@@ -31,7 +31,7 @@ int addPatientInfo(PatientInfo *p){
 
     puts("请输入病人性别：");
     gets(pi_temp.Sex);
-    puts(pi_temp.Sex);
+//    puts(pi_temp.Sex);
 
     countDoctor();
     for (int i = 0; i < 5; ++i) {

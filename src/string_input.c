@@ -35,6 +35,6 @@ int stringInput(char *d, int lens, int mode) {
         }
     }
 
-    strcpy(d,t);//将临时数组内容拷贝到指定地址
+    strcpy(d, t);//将临时数组内容拷贝到指定地址
     return 1;
 }

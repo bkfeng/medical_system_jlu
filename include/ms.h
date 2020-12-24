@@ -23,8 +23,8 @@ typedef struct DoctorInfo {
     int RoomID;          //科室Id
 
     char Name[20];       //姓名
-    char Rank[20];       //主任医师、副主任医师、主治医师、住院医师
-    char sex[20];        //男，女
+    char Level[20];       //主任医师、副主任医师、主治医师、住院医师
+    char Sex[20];        //男，女
     char Date[10];        //出诊日期： 0 1 0 1 0 0 1
 } DoctorInfo; //医生信息
 
@@ -95,6 +95,7 @@ typedef struct TreatRecord {
 } TreatRecord;
 
 
+
 /*-----------函数-------------*/
 
 
@@ -103,9 +104,12 @@ Medicine *loadMedicine();//获取医生信息
 CheckUp *loadCheckUp();//获取检查信息
 
 int getTime();//获取当前时间
+int getTimeW();//获取星期
 int outpatientSystem();//门诊系统
 int inhosSystem();//住院系统
 int getNum();//获取数字
+
+int countDoctor();//统计出诊情况
 
 int addPatientInfo(PatientInfo *p);//增加挂号记录
 int addTreatMedList(TreatMed *p);//增加开药记录
@@ -122,9 +126,14 @@ int saveTreatCheckLIst();//保存检查记录
 int savePatientInfo();//保存门诊记录
 
 int queryOS();//查询门诊诊疗记录
-int queryTreatMedPatientInfo(TreatMed *p);//查询病人诊疗记录
+int queryTreatPatientInfo();//查询病人诊疗记录
+int queryTreatRoom();//查询科室诊疗记录
+int queryTreatDoctor();//查询医生诊疗记录
+int queryTreatTime();//查询某时段诊疗记录
 
 int modifyTreatList(long long id);//修改删除记录
+
+int importTreatList();//导入诊疗记录
 
 /*--------宏定义---------*/
 #define HEAD0 "*****************************************"
@@ -140,6 +149,10 @@ int modifyTreatList(long long id);//修改删除记录
 #define HEAD4 "|序号|挂号编号       |名称      |单价   |数量|总价   |"
 #define FORMAT4 "|%15lld|%-10s|%7.2f|%4d|%7.2f|\n"
 #define DATA4 tr_c_list[j].PatientID,c_list[tr_c_list[j].C_ID].Name,c_list[tr_c_list[j].C_ID].Unit,tr_c_list[j].Num,tr_c_list[j].Total
+
+#define HEAD5 "|序号|挂号编号       |姓名      |性别|年龄|身份证号          |"
+#define FORMAT5 "|%3d.|%15lld|%-10s|%-4s|%-4s|%-18s|\n"
+#define DATA5 i,p_list[j].ID,p_list[j].Name,p_list[j].Sex,p_list[j].Age,p_list[j].CardID
 
 #endif //MEDICAL_SYSTEM_JLU_MS_H
 

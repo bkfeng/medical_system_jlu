@@ -1,6 +1,7 @@
 #include "ms.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 extern TreatMed tr_m_list[];//诊疗记录
 extern int tr_m_list_length;//诊疗记录长度
@@ -13,25 +14,27 @@ extern Medicine c_list[];
 extern int p_list_length;
 extern PatientInfo p_list[];
 
-int queryTreatPatientInfo(){
+int queryTreatDoctor(){
 
     int ti = 0;
     long long t[100];
+    int did = 0;
 
     char c[20];
-    puts("请输入患者身份证号");
-    stringInput(c,18,1);
+    puts("请输入医生编号");
+    stringInput(c,2,1);
+    did = strtol(c,NULL,10);
 
-    puts("该患者开药记录为：");
+    puts("该医生开药记录为：");
     puts(HEAD3);
 
     for (int i = 0; i < p_list_length; ++i) {
-        if (strcmp(p_list[i].CardID,c) == 0){    //判断card id是否相等
+        if (p_list[i].D_ID == did){    //判断doc id是否相等
 
             for (int j = 0; j < tr_m_list_length; ++j) {
 
                 if (tr_m_list[j].PatientID == p_list[i].ID &&
-                tr_m_list[j].Flag == 1){           //筛选符合挂号编号的记录并检查标志位是否有效
+                    tr_m_list[j].Flag == 1){           //筛选符合挂号编号的记录并检查标志位是否有效
 
                     t[ti] = tr_m_list[j].ID;
                     ti++;
@@ -43,16 +46,16 @@ int queryTreatPatientInfo(){
         }
     }
 
-    puts("该患者检查记录为：");
+    puts("该医生检查记录为：");
     puts(HEAD4);
 
     for (int i = 0; i < p_list_length; ++i) {
-        if (strcmp(p_list[i].CardID,c) == 0){    //判断card id是否相等
+        if (p_list[i].D_ID == did){    //判断doc id是否相等
 
             for (int j = 0; j < tr_c_list_length; ++j) {
 
                 if (tr_c_list[j].PatientID == p_list[i].ID &&
-                tr_c_list[j].Flag == 1){         //筛选符合挂号编号的记录并检查标志位是否有效
+                    tr_c_list[j].Flag == 1){         //筛选符合挂号编号的记录并检查标志位是否有效
 
                     t[ti] = tr_c_list[j].ID;
                     ti++;
@@ -72,3 +75,4 @@ int queryTreatPatientInfo(){
     return 1;
 
 }
+

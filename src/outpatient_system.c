@@ -38,10 +38,9 @@ int outpatientSystem(){
         puts("          2---检查                      ");
         puts("          3---开药                      ");
         puts("          4---保存                      ");
-        puts("          5---查询                      ");
+        puts("          5---查询及编辑                 ");
         puts("          6---导入                      ");
-        puts("          7---修改                      ");
-        puts("          8---删除                      ");
+        puts("          7---医生出诊情况                  ");
         puts("          0---返回上层                   ");
 
         while (1){
@@ -95,9 +94,21 @@ int outpatientSystem(){
                     }
                     break;
                 case '6':
-
+                    if (importTreatList()){//查询诊疗记录
+                        system("pause");//按任意键继续
+                    } else{
+                        puts("***********输入错误，请重新选择********");
+                        system("pause");//按任意键继续
+                    }
                     break;
-
+                case '7':
+                    if (countDoctor()){//查询诊疗记录
+                        system("pause");//按任意键继续
+                    } else{
+                        puts("***********输入错误，请重新选择********");
+                        system("pause");//按任意键继续
+                    }
+                    break;
                 case '0':
                     os_quit_flag = 1;//退出系统
                     break;

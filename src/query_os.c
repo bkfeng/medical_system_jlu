@@ -3,6 +3,7 @@
 #include <string.h>
 #include "ms.h"
 extern TreatMed tr_m_list[];
+extern double g_sum;
 int queryOS() {
 
     int q_quit_flag = 0;//门诊查询系统退出标记
@@ -15,10 +16,12 @@ int queryOS() {
         puts("*************欢迎进入门诊查询系统**************");
         puts("");
         puts("**********请选择需要进行的操作：***********");
-        puts("          1---查询患者诊疗信息并编辑                 ");
+        puts("          1---查询患者诊疗记录                 ");
         puts("          2---查询科室诊疗记录                     ");
         puts("          3---查询医生诊疗记录                      ");
-        puts("          4---查询某时段诊疗记录                     ");
+        puts("          4---查询某时段诊疗记录                    ");
+        puts("          5---查询医院营业额                     ");
+        puts("          6---查询医生出诊情况                     ");
         puts("          0---返回上层                      ");
 
         while (1) {
@@ -32,7 +35,7 @@ int queryOS() {
             switch (c_input[0]) {
 
                 case '1':
-                    if (queryTreatMedPatientInfo(tr_m_list)) {//查询记录
+                    if (queryTreatPatientInfo()) {//查询记录
                         system("pause");//按任意键继续
                     } else {
                         puts("***********输入错误，请重新选择********");
@@ -40,11 +43,37 @@ int queryOS() {
                     }
                     break;
                 case '2':
-
+                    if (queryTreatRoom()) {//查询记录
+                        system("pause");//按任意键继续
+                    } else {
+                        puts("***********输入错误，请重新选择********");
+                        system("pause");//按任意键继续
+                    }
+                    break;
                 case '3':
-
+                    if (queryTreatDoctor()) {//查询记录
+                        system("pause");//按任意键继续
+                    } else {
+                        puts("***********输入错误，请重新选择********");
+                        system("pause");//按任意键继续
+                    }
+                    break;
                 case '4':
+                    if (queryTreatTime()) {//查询记录
+                        system("pause");//按任意键继续
+                    } else {
+                        puts("***********输入错误，请重新选择********");
+                        system("pause");//按任意键继续
+                    }
+                    break;
+                case '5':
+                    printf("总营业额为：%.2f\n",g_sum);
+                    system("pause");//按任意键继续
+                    break;
+                case '6':
+                    puts("医生出诊情况为：");
 
+                    break;
                 case '0':
                     q_quit_flag = 1;//退出系统
                     break;

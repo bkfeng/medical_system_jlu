@@ -3,6 +3,7 @@
 #include <string.h>
 extern int p_list_length;//病人信息数组长度
 extern int p_list_length_new;//新增病人信息数组长度
+extern int is_save;
 
 /*****************
  * 增加一条挂号记录
@@ -32,6 +33,7 @@ int addPatientInfo(PatientInfo *p){
     gets(pi_temp.Sex);
     puts(pi_temp.Sex);
 
+    countDoctor();
     for (int i = 0; i < 5; ++i) {
 
         puts("请输入挂号科室编号：");
@@ -48,7 +50,7 @@ int addPatientInfo(PatientInfo *p){
         printf("挂号编号为：%lld\n",p[p_list_length].ID);
         puts("***********挂号成功********");
         p_list_length++;
-//    printf("%lld\n",p->ID);
+        is_save = 0;
         puts("该患者是否需要继续挂号（1.是/2.否）：");
         if (getNum() == 2){
             return 1;

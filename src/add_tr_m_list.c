@@ -13,6 +13,7 @@ extern int p_list_length;//病人信息数组长度
 extern int p_list_length_new;//新增病人信息数组长度
 
 extern double g_sum;
+extern int is_save;
 
 int addTreatMedList(TreatMed *p){
 
@@ -21,22 +22,42 @@ int addTreatMedList(TreatMed *p){
     int f = 0;
     int q = 0;
     char temp[255];
+    int pid[5];
 
-    puts("请输入挂号编号：");
-    stringInput(temp,11,1);
-    tr_temp.PatientID = strtoll(temp,NULL,10);
-    for (int i = 0; i < p_list_length; ++i) {
-        if (p_list[i].ID == tr_temp.PatientID){
-            q = 1;
+    puts("近5位患者编号分别为：");
+    puts(HEAD5);
+    for (int i = 0; i < 5; ++i) {
+        if (p_list_length - i > 0){
+            pid[i] = p_list[p_list_length - i].ID;
+            int j = p_list_length -1 - i;
+            printf(FORMAT5,DATA5);
         }
     }
-    if (!q){
-        puts("该编号不存在！");
-        return 0;
+    puts("请输入挂号编号(如果在上述记录中可直接输入序号)：");
+    stringInput(temp,11,1);
+    tr_temp.PatientID = strtoll(temp,NULL,10);
+
+    if (tr_temp.PatientID <= 5){
+        tr_temp.PatientID = pid[tr_temp.PatientID - 1];
+    } else{
+        for (int i = 0; i < p_list_length; ++i) {
+            if (p_list[i].ID == tr_temp.PatientID){
+                q = 1;
+            }
+        }
+        if (!q){
+            puts("该编号不存在！");
+            return 0;
+        }
     }
 
     do {
 
+        puts("可选择的药品有:");
+        puts("|编号 |名称    |单价  |");
+        for (int i = 0; i < 6; ++i) {
+            printf("|%4d.|%-8s|%6.2f|\n",i,m_list[i].Name,m_list[i].Unit);
+        }
         puts("请输入药品编号：");
         stringInput(temp,2,1);
         tr_temp.M_ID = (int)strtol(temp,NULL,10);
@@ -56,7 +77,7 @@ int addTreatMedList(TreatMed *p){
 
         puts("***********操作成功********");
         tr_m_list_length++;
-//    printf("%lld\n",p->ID);
+        is_save = 0;
         puts("该患者是否需要继续开药（1.是/2.否）：");
 
         f = getNum();

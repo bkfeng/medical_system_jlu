@@ -1,38 +1,72 @@
 #include "ms.h"
 #include <stdio.h>
-#include <stdlib.h>
-/*****
+#include <string.h>
+
+extern TreatCheck tr_c_list[];//诊疗记录  检查
+extern int tr_c_list_length;//诊疗记录长度
+extern int tr_c_list_length_new;//新增诊疗记录长度
+extern CheckUp c_list[];//药品信息
+
+extern TreatMed tr_m_list[];//诊疗记录   开药
+extern int tr_m_list_length;//诊疗记录长度
+extern int tr_m_list_length_new;//新增诊疗记录长度
+extern Medicine m_list[];
+
+extern double g_sum;
 int importTreatList() {
 
-    TreatMed tr_temp;
-    tr_temp.Flag = 1;
+    TreatCheck tr_c_temp;
+    TreatMed tr_m_temp;
+    tr_c_temp.Flag = 1;
+    tr_m_temp.Flag = 1;
+    int count = 0;
     int f;
     char temp[255];
 
-    puts("请输入挂号编号：");
-    stringInput(temp, 11, 1);
-    tr_temp.PatientID = strtoll(temp, NULL, 10);
+    FILE *fp;
 
-    puts("请输入药品编号：");
-    stringInput(temp, 2, 1);
-    tr_temp.M_ID = (int) strtol(temp, NULL, 10);
+    /*----------导入检查记录-------------*/
+    fp = fopen("../data/treat_cl.txt","r+");
+    if (fp == NULL){
+        puts("检查记录导入失败失败！");
+        return 0;
+    }
+    while (!feof(fp)){
 
-    puts("请输入药品数量：");
-    stringInput(temp, 2, 1);
-    tr_temp.Num = (int) strtol(temp, NULL, 10);
+        fscanf(fp,"%lld,%d,%d",&tr_c_temp.PatientID,&tr_c_temp.C_ID,&tr_c_temp.Num);
+        tr_c_temp.Total = c_list[tr_c_temp.C_ID].Unit * tr_c_temp.Num;
+        g_sum += tr_c_temp.Total;//记录到医院总营收中
 
-    tr_temp.Total = m_list[tr_temp.M_ID].Unit * tr_temp.Num;//计算总额
+        if (tr_c_temp.PatientID){//判断读入记录是否为空
+            memcpy(&tr_c_list[tr_c_list_length],&tr_c_temp,sizeof(TreatCheck));
+            tr_c_list_length ++;
+            count++;
+        }
+    }
+    fclose(fp);
+    printf("%d条检查记录已导入。\n", count);
 
-    tr_temp.ID = (long long) getTime() * 10000 + tr_list_length + 1;
+    /*----------导入开药记录-------------*/
+    count = 0;//计数器清零
+    fp = fopen("../data/treat_ml.txt","r+");
+    if (fp == NULL){
+        puts("开药记录导入失败失败！");
+        return 0;
+    }
+    while (!feof(fp)){
 
-    //如果上述均正确
-    memcpy(p + tr_list_length, &tr_temp, sizeof(tr_temp));//临时结构体赋给p指向的数组元素
+        fscanf(fp,"%lld,%d,%d",&tr_m_temp.PatientID,&tr_m_temp.M_ID,&tr_m_temp.Num);
+        tr_m_temp.Total = m_list[tr_m_temp.M_ID].Unit * tr_m_temp.Num;
+        g_sum += tr_m_temp.Total;//记录到医院总营收中
 
-    puts("***********操作成功********");
-    tr_list_length++;
-    FILE *fp
-    fp = fopen("../data/treat_ml.txt", 'r');
-    fscanf(fp, "%lld,%d,%d",)
+        if (tr_m_temp.PatientID){//判断读入记录是否为空
+            memcpy(&tr_m_list[tr_m_list_length],&tr_m_temp,sizeof(TreatMed));
+            tr_m_list_length ++;
+            count++;
+        }
+    }
+    fclose(fp);
+    printf("%d条开药记录已导入。\n", count);
+
+    return 1;
 }
-
-*/
